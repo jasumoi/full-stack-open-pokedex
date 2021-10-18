@@ -1,0 +1,7 @@
+# Python
+
+Tools such as nose2 and pytest are commonly referenced for executing unit tests and generating test and code coverage reports. For linting pylint seems to be the most commonly referenced tool. Python does not need actual build stage. However, there are tools for handling dependencies such as pip that can be used to install packages from the Python Package Index. Python comes with venv module that provides support for creating isolated lightweight virtual environments.
+
+It seems that there are a lot of alternatives for Jenkins and Github CI/CD. The most commonly referenced alternatives include GitLab CI/CD tool, Atlassian Bamboo, CircleCI, TeamCity, Travis CI, ... In a Python specific context TravisCI, CodeShip, and Semaphore are listed. Custom solutions from big companies such as AWS CodePipeline, Microsoft Team Foundation Server, and Oracle’s Hudson can be bought as a service.
+
+Python is widely used programming language in different domains. There are frameworks for developing web applications with Python such as Jenkins or Flask. Cloud-based CI setups would probably be very good for these types of applications. In case the Python application has dependencies to special hardware or to other systems that cannot be easily supported by the cloud-based setup, it might be more feasible to go with self-hosted setup that can be adjusted to application's needs.
