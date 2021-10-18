@@ -22,5 +22,5 @@ jobs:
         env:
           COMMIT_MESSAGES: ${{ github.event.commits.*.message }}
         run: echo "$COMMIT_MESSAGES"
-        if: ${{ contains(github.event.commits.*.message.join(" "), "skip") }}
-        run: echo "includes substring skip"
+        # if: ${{ contains(github.event.commits.*.message.join(" "), "skip") }}
+        # run: echo "includes substring skip"
