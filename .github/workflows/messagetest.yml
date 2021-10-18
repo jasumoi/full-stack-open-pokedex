@@ -19,8 +19,9 @@ jobs:
           COMMITS: ${{ toJson(github.event.commits) }}
         run: echo "$COMMITS"
       - name: commit messages
-        env:
-          COMMIT_MESSAGES: ${{ join(github.event.commits.\*.message, ' ') }}
-        run: echo "$COMMIT_MESSAGES"
+        run: |
+
+          COMMIT_MESSAGES = ${{ join(github.event.commits.\*.message, ' ') }}
+          echo "$COMMIT_MESSAGES"
         # if: ${{ contains(github.event.commits.*.message.join(" "), "skip") }}
         # run: echo "includes substring skip"
