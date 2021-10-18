@@ -20,7 +20,7 @@ jobs:
         run: echo "$COMMITS"
       - name: commit messages
         env:
-          COMMIT_MESSAGES: ${{ contains(join(github.event.commits.*.message, ' '), '#skip') }}
+          COMMIT_MESSAGES: ${{ contains(join(github.event.commits.*.message, ' '), 'skip') }}
         run: |
           if ${COMMIT_MESSAGES} == true; then
             echo "flag set to true"
