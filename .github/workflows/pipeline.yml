@@ -1,5 +1,5 @@
 name: Deployment pipeline
-
+# Skips deployment and version tag if commit message contains #skip substring
 on:
   push:
     branches:
