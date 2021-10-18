@@ -21,7 +21,7 @@ jobs:
       - name: commit messages
         run: |
 
-          COMMIT_MESSAGES = ${{ join(github.event.commits.\*.message, ' ') }}
+          COMMIT_MESSAGES = ${{ join(github.event.commits.*.message, ' ') }}
           echo "$COMMIT_MESSAGES"
         # if: ${{ contains(github.event.commits.*.message.join(" "), "skip") }}
         # run: echo "includes substring skip"
