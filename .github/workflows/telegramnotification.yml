@@ -17,4 +17,6 @@ jobs:
             
             Repository: ${{ github.repository }}
             
+            This message should go to my user after changing TELEGRAM_TO secret's value.
+
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
