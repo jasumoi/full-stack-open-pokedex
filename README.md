@@ -4,6 +4,10 @@ This repository is used for the CI/CD module of the Full stack open course
 
 Fork the repository to complete course exercises
 
+Exercises 11.21 Your own pipeline and 11.22 Protect your main branch and ask for pull request are in a separate repository:
+
+https://github.com/jasumoi/bloglist
+
 ## Commands
 
 Start by running `npm install` inside the project folder
